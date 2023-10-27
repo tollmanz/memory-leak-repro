@@ -1,0 +1,19 @@
+{
+  "name": "dd-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --inspect --expose-gc index.js",
+    "start:dd": "node --inspect --expose-gc -r ./node_modules/dd-trace/init.js index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2",
+    "dd-trace": "^4.15.0",
+    "got": "^13.0.0",
+    "request-promise-native": "^1.0.9"
+  },
+  "type": "module"
+}
